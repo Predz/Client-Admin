@@ -34,6 +34,11 @@ def _change_speed(player, filters, operator, value):
 	for target in Filter(filters, player):
 		target.speed = op(target.speed, float(value))
 ```
+To use this client command a user with permission character 'A', must input in their console "speed <filters> <operator> <value>".
+Example uses:
+"speed @ct + 0.2", this will give all CTs + 0.2 to their speed.
+"speed #Predz + 0.2", this will give player named Predz + 0.2 to his speed.
+"speed @ct,#Predz + 0.2", this will give all CTs and player named Predz + 0.2 to their speed.
 
 
 To add a permission character to a player, go to the permissions.py and alter the dictionary provided.
